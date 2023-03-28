@@ -16,9 +16,9 @@ const Home = () => {
           <h2 className='title-3'>I'm a Full Stack Developer.</h2>
           <p className='description'>I'm a full stack developer specializing in building exceptional digitial experiences. Currently, I'm focused on building responsive full-stack web applications.</p>
           <ul className="social-icons">
-            <li><a href="/"> <FaGithub size={25} /> </a></li>
-            <li><a href="/"> <FaLinkedin size={25}/> </a></li>
-            <li><a href="/"> <FaInstagram size={25}/> </a></li>
+            <li><a href="https://github.com/techysiddhant"> <FaGithub size={25} /> </a></li>
+            <li><a href="https://www.linkedin.com/in/siddhant-jain-5581271a0/"> <FaLinkedin size={25}/> </a></li>
+            <li><a href="https://www.instagram.com/techysiddhant/"> <FaInstagram size={25}/> </a></li>
           </ul>
           <a href={CV} download className='view-work'>Download CV</a>
         </div>
