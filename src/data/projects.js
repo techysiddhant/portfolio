@@ -1,6 +1,6 @@
 import Unfold from "../assets/projects/unfold.png"
 import notes from "../assets/projects/notes.png";
-import mba from '../assets/projects/mba.png'
+import todo from '../assets/projects/todo.png'
 export const projects = [{
         id: 1,
         title: "Unfold Page",
@@ -27,17 +27,30 @@ export const projects = [{
         github: "https://github.com/techysiddhant/notes-app-react",
         live: "https://siddhant-notesapp.netlify.app/",
     },
+    // {
+    //     id: 3,
+    //     title: "MBA Chaiwala Clone",
+    //     desc: {
+    //         p1: "The MBA Chaiwala clone website is built using ReactJS and designed with SCSS to create a dynamic and interactive user experience.",
+    //         p2: "The website provides detailed information about the different types of chai offered by MBA Chaiwala.",
+    //         p3: "he MBA Chaiwala website is designed to build a community around the brand. It features a blog with articles on chai culture, entrepreneurship, and business, as well as a forum where visitors can connect with other chai enthusiasts.",
+    //         p4: "The website tells the story of the MBA Chaiwala and his journey to success. Visitors can learn about the founder's experience."
+    //     },
+    //     img: mba,
+    //     github: "https://github.com/techysiddhant/mba-chaiwala-clone-react",
+    //     live: "https://mbachaiwala-clone.netlify.app/",
+    // },
     {
         id: 3,
-        title: "MBA Chaiwala Clone",
+        title: "React JS Todo App",
         desc: {
-            p1: "The MBA Chaiwala clone website is built using ReactJS and designed with SCSS to create a dynamic and interactive user experience.",
-            p2: "The website provides detailed information about the different types of chai offered by MBA Chaiwala.",
-            p3: "he MBA Chaiwala website is designed to build a community around the brand. It features a blog with articles on chai culture, entrepreneurship, and business, as well as a forum where visitors can connect with other chai enthusiasts.",
-            p4: "The website tells the story of the MBA Chaiwala and his journey to success. Visitors can learn about the founder's experience."
+            p1: "A todo app is a simple application that allows users to create a list of tasks they need to complete.",
+            p2: "The website provides detailed information about the different types of chai offered by MBA Chaiwala.By using local storage, the todo app can store the list of tasks locally on the user's device, allowing them to access their tasks even after closing and reopening the app.",
+            p3: "When a user creates a new task or marks a task as completed in the todo app, React JS updates the local storage with the new data. This allows the app to maintain a persistent state, even if the user navigates away from the app or refreshes the page.",
+            p4: "The use of local storage in a React JS todo app also allows for a seamless user experience. Users can quickly add or remove tasks without worrying about losing their progress, and the app can provide real-time updates to reflect the current state of the user's tasks. "
         },
-        img: mba,
-        github: "https://github.com/techysiddhant/mba-chaiwala-clone-react",
-        live: "https://mbachaiwala-clone.netlify.app/",
+        img: todo,
+        github: "https://github.com/techysiddhant/react-todo-v1",
+        live: "https://siddhant-todo.netlify.app/",
     }
 ]
