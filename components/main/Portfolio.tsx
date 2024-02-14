@@ -17,7 +17,7 @@ const Portfolio = () => {
     // animate={{ y: "0%" }}
     // transition={{ duration: 1 }}
     >
-      <div className="h-[500vh] md:h-[600vh] relative z-40" ref={ref}>
+      <div className="h-[500vh] md:h-[400vh]  relative z-40 mb-10 " ref={ref}>
         {/* <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
      My Works
     </div> */}
@@ -29,17 +29,20 @@ const Portfolio = () => {
                 className={`h-screen w-screen flex items-center justify-center z-50  ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-2 md:gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-6xl ">
+                <div className="flex flex-col gap-2  text-white ">
+                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-6xl">
                     {item.title}
                   </h1>
-                  <div className="relative  w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div className="relative  mx-auto  w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[350px] xl:w-[300px] xl:h-[300px]">
                     <Image src={item.img} alt="project-poster"
                       fill
-                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 30%, 33vw"
                       className="object-contain" />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] my-2">
+                  <h1 className="2xl:hidden text-center text-xl font-bold md:text-4xl lg:text-6xl xl:text-4xl">
+                    {item.title}
+                  </h1>
+                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px] ">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end ">

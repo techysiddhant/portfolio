@@ -268,7 +268,7 @@ export const portfolio_data = [
 		id: 1,
 		title: "Codify (LMS Platform)",
 		desc:
-			"Codify is your subscription-based portal to coding mastery, built with the powerful MERN stack. Explore our diverse library of courses, pay a monthly fee, and gain access to interactive lessons, coding challenges, and expert-led guidance. Unleash your potential, one line at a time!",
+			"Codify is your subscription-based portal to coding mastery, built with the powerful MERN stack. ",
 		img: "/codify.png",
 		link: "https://codifyio.vercel.app/",
 	},
@@ -276,7 +276,7 @@ export const portfolio_data = [
 		id: 2,
 		title: "Unfold Page",
 		desc:
-			"The web app is built using Node.js, Express.js, and MongoDB, and includes JWT authentication to ensure secure access for users. Unfold Page is a web app that allows users to publish short stories anonymously, without revealing their identity.",
+			"The web app is built using Node.js, Express.js, and MongoDB. Unfold Page is a web app that allows users to publish short stories anonymously, without revealing their identity.",
 		img: "/unfold.png",
 		link: "",
 	},
@@ -285,7 +285,7 @@ export const portfolio_data = [
 		title: "Notes App",
 		color: "from-indigo-300 to-blue-300",
 		desc:
-			"This notes taking web app is built using React JS and Firebase, making it a reliable and efficient tool for managing notes. The app features a Google sign-in feature that allows for easy access to notes from any device, ensuring seamless workflow.",
+			"This notes taking web app is built using React JS and Firebase, making it a reliable and efficient tool for managing notes.",
 		img: "/notes.png",
 		link: "https://siddhant-typescript-todo.netlify.app/",
 	},
