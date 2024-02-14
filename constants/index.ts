@@ -17,30 +17,30 @@ export const Skill_data = [
 		width: 65,
 		height: 65,
 	},
-	{
-		skill_name: "Tailwind Css",
-		Image: "/tailwind.png",
-		width: 80,
-		height: 80,
-	},
+	// {
+	// 	skill_name: "Tailwind Css",
+	// 	Image: "/tailwind.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
 	{
 		skill_name: "React",
 		Image: "/react.png",
 		width: 80,
 		height: 80,
 	},
-	{
-		skill_name: "Redux",
-		Image: "/redux.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "React Query",
-		Image: "/reactquery.png",
-		width: 80,
-		height: 80,
-	},
+	// {
+	// 	skill_name: "Redux",
+	// 	Image: "/redux.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
+	// {
+	// 	skill_name: "React Query",
+	// 	Image: "/reactquery.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
 	{
 		skill_name: "Type Script",
 		Image: "/ts.png",
@@ -53,29 +53,35 @@ export const Skill_data = [
 		width: 80,
 		height: 80,
 	},
-	{
-		skill_name: "Framer Motion",
-		Image: "/framer.png",
-		width: 80,
-		height: 80,
-	},
+	// {
+	// 	skill_name: "Framer Motion",
+	// 	Image: "/framer.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
 	// {
 	// 	skill_name: "Stripe Payment",
 	// 	Image: "/stripe.webp",
 	// 	width: 80,
 	// 	height: 80,
 	// },
+	// {
+	// 	skill_name: "Node js",
+	// 	Image: "/node-js.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
+	// {
+	// 	skill_name: "Mongo db",
+	// 	Image: "/mongodb.png",
+	// 	width: 40,
+	// 	height: 40,
+	// },
 	{
-		skill_name: "Node js",
-		Image: "/node-js.png",
+		skill_name: "Docker",
+		Image: "/docker.webp",
 		width: 80,
 		height: 80,
-	},
-	{
-		skill_name: "Mongo db",
-		Image: "/mongodb.png",
-		width: 40,
-		height: 40,
 	},
 ];
 
@@ -95,24 +101,24 @@ export const Socials = [
 ];
 
 export const Frontend_skill = [
-	{
-		skill_name: "Html 5",
-		Image: "/html.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Css",
-		Image: "/css.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Java Script",
-		Image: "/js.png",
-		width: 65,
-		height: 65,
-	},
+	// {
+	// 	skill_name: "Html 5",
+	// 	Image: "/html.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
+	// {
+	// 	skill_name: "Css",
+	// 	Image: "/css.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
+	// {
+	// 	skill_name: "Java Script",
+	// 	Image: "/js.png",
+	// 	width: 65,
+	// 	height: 65,
+	// },
 	{
 		skill_name: "Tailwind Css",
 		Image: "/tailwind.png",
@@ -122,71 +128,77 @@ export const Frontend_skill = [
 	{
 		skill_name: "React",
 		Image: "/react.png",
-		width: 80,
-		height: 80,
+		width: 70,
+		height: 70,
 	},
 	{
 		skill_name: "Redux",
 		Image: "/redux.png",
-		width: 80,
-		height: 80,
+		width: 70,
+		height: 70,
 	},
 	{
 		skill_name: "React Query",
 		Image: "/reactquery.png",
-		width: 80,
-		height: 80,
+		width: 60,
+		height: 60,
 	},
 	{
-		skill_name: "Type Script",
-		Image: "/ts.png",
-		width: 80,
-		height: 80,
+		skill_name: "Framer Motion",
+		Image: "/framer.png",
+		width: 60,
+		height: 60,
 	},
-	{
-		skill_name: "Next js 13",
-		Image: "/next.png",
-		width: 80,
-		height: 80,
-	},
+	// {
+	// 	skill_name: "Type Script",
+	// 	Image: "/ts.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
+	// {
+	// 	skill_name: "Next js 13",
+	// 	Image: "/next.png",
+	// 	width: 80,
+	// 	height: 80,
+	// },
 ];
 
 export const Backend_skill = [
 	{
 		skill_name: "Node js",
 		Image: "/node-js.png",
-		width: 80,
-		height: 80,
+		width: 85,
+		height: 85,
 	},
 	{
 		skill_name: "Express js",
 		Image: "/express.png",
-		width: 80,
-		height: 80,
+		width: 85,
+		height: 85,
 	},
 	{
 		skill_name: "Mongo db",
 		Image: "/mongodb.png",
-		width: 40,
-		height: 40,
+		width: 50,
+		height: 50,
 	},
 	{
 		skill_name: "Fire base",
 		Image: "/Firebase.png",
-		width: 55,
-		height: 55,
+		width: 60,
+		height: 60,
 	},
 	{
 		skill_name: "Appwrite",
 		Image: "/appwrite.png",
-		width: 55,
-		height: 55,
+		width: 70,
+		height: 70,
 	},
 	{
 		skill_name: "Supabase",
 		Image: "/supabase.png",
-		width: 55,
-		height: 55,
+		width: 70,
+		height: 70,
 	},
 	// {
 	// 	skill_name: "Postger SQL",
@@ -248,5 +260,50 @@ export const Other_skill = [
 		Image: "/go.png",
 		width: 60,
 		height: 60,
+	},
+];
+
+export const portfolio_data = [
+	{
+		id: 1,
+		title: "Codify (LMS Platform)",
+		desc:
+			"Codify is your subscription-based portal to coding mastery, built with the powerful MERN stack. Explore our diverse library of courses, pay a monthly fee, and gain access to interactive lessons, coding challenges, and expert-led guidance. Unleash your potential, one line at a time!",
+		img: "/codify.png",
+		link: "https://codifyio.vercel.app/",
+	},
+	{
+		id: 2,
+		title: "Unfold Page",
+		desc:
+			"The web app is built using Node.js, Express.js, and MongoDB, and includes JWT authentication to ensure secure access for users. Unfold Page is a web app that allows users to publish short stories anonymously, without revealing their identity.",
+		img: "/unfold.png",
+		link: "",
+	},
+	{
+		id: 3,
+		title: "Notes App",
+		color: "from-indigo-300 to-blue-300",
+		desc:
+			"This notes taking web app is built using React JS and Firebase, making it a reliable and efficient tool for managing notes. The app features a Google sign-in feature that allows for easy access to notes from any device, ensuring seamless workflow.",
+		img: "/notes.png",
+		link: "https://siddhant-typescript-todo.netlify.app/",
+	},
+];
+export const experience_data = [
+	{
+		duration: "Aug 2023 - Dec 2023",
+		institution: "Firststore , Kolkata, India",
+		role: "Front-End Developer Intern (Remote)",
+	},
+	{
+		duration: "Feb 2023 - Jul 2023",
+		institution: "Tutorang, Texas ,USA",
+		role: "Web Developer Intern (Remote)",
+	},
+	{
+		duration: "Aug 2019 - Jul 2023",
+		institution: "United College of Engineering and Research,Greater Noida",
+		role: "B.Tech (Computer Science and Engineering)",
 	},
 ];

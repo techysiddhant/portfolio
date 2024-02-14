@@ -14,7 +14,7 @@ interface Props {
 
 const SkillDataProvider = ({ src, width, height, index }: Props) => {
  const { ref, inView } = useInView({
-  triggerOnce: true
+  // triggerOnce: true
  })
 
  const imageVariants = {

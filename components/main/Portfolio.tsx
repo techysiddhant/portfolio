@@ -3,73 +3,33 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useRef } from "react";
-const items = [
-  {
-    id: 1,
-    title: "Codify (LMS Platform)",
-    desc: "Codify is your subscription-based portal to coding mastery, built with the powerful MERN stack. Explore our diverse library of courses, pay a monthly fee, and gain access to interactive lessons, coding challenges, and expert-led guidance. Unleash your potential, one line at a time!",
-    img: "/codify.png",
-    link: "https://codifyio.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Unfold Page",
-    desc: "The web app is built using Node.js, Express.js, and MongoDB, and includes JWT authentication to ensure secure access for users. Unfold Page is a web app that allows users to publish short stories anonymously, without revealing their identity.",
-    img: "/unfold.png",
-    link: "",
-  },
-  {
-    id: 3,
-    title: "Notes App",
-    color: "from-indigo-300 to-blue-300",
-    desc: "This notes taking web app is built using React JS and Firebase, making it a reliable and efficient tool for managing notes. The app features a Google sign-in feature that allows for easy access to notes from any device, ensuring seamless workflow.",
-    img: "/notes.png",
-    link: "https://siddhant-typescript-todo.netlify.app/",
-  },
-
-  // {
-  //  id: 3,
-  //  color: "from-violet-300 to-purple-300",
-  //  title: "Vanilla Book App",
-  //  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //  img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  //  link: "https://lama.dev",
-  // },
-  // {
-  //  id: 4,
-  //  color: "from-purple-300 to-red-300",
-  //  title: "Spotify Music App",
-  //  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  //  img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //  link: "https://lama.dev",
-  // },
-];
+import { portfolio_data } from "@/constants/index";
 const Portfolio = () => {
   const ref = useRef<HTMLInputElement>(null)
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-90%"]);
 
   return (
     <motion.div
-      className="h-full py-10 md:py-20"
+      className="h-full py-10  md:py-20"
       id="projects"
     // initial={{ y: "-200vh" }}
     // animate={{ y: "0%" }}
     // transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative z-40" ref={ref}>
+      <div className="h-[500vh] md:h-[600vh] relative z-40" ref={ref}>
         {/* <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
      My Works
     </div> */}
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
             {/* <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" /> */}
-            {items.map((item) => (
+            {portfolio_data.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center z-50  ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex flex-col gap-2 md:gap-8 text-white">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-6xl ">
                     {item.title}
                   </h1>
