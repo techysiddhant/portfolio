@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
         <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Featured Projects</h2>
         <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl  max-w-md mx-auto">See how I transformed concepts into engaging digital experiences.</p>
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
-          {portfolioProjects.map(project => <div className="bg-gray-800 rounded-3xl z-0 overflow-hidden relative after:z-10 after:content-['']  after:absolute after:inset-0  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-18" key={project.title}>
+          {portfolioProjects.map((project, ind) => <div className="bg-gray-800 rounded-3xl z-0 overflow-hidden  after:z-10 after:content-['']  after:absolute after:inset-0  after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 sticky " key={project.title} style={{ top: `calc(64px + ${ind * 40}px` }}>
             <div className="absolute inset-0 -z-10 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
             <div className="lg:grid lg:grid-cols-2 lg:gap-16">
               <div className="lg:pb-16">
