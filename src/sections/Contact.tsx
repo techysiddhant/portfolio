@@ -8,8 +8,8 @@ export const ContactSection = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl">Let&apos;s create something amazing together</h2>
-            <p className="text-sm mt-2 md:text-base">Ready to bring your next project to life? Let&apos;s connect and discuss how I can help you achieve your goals.</p>
+            <h2 className="font-serif text-2xl md:text-3xl">Let&apos;s build something incredible together</h2>
+            <p className="text-sm mt-2 md:text-base">Ready to turn your vision into reality? Get in touch, and let&apos;s explore how I can help bring your project to life.</p>
           </div>
           <div>
             <button className="text-white w-max border border-gray-900 bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 mt-8">
