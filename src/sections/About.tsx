@@ -32,11 +32,11 @@ const toolboxItems = [
   {
     title: "React",
     iconType: ReactIcon
-  }, ,
+  },
   {
     title: "Chrome",
     iconType: ChromeIcon
-  }, ,
+  },
   {
     title: "Github",
     iconType: GithubIcon
