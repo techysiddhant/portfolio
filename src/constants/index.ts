@@ -4,7 +4,6 @@ import HTMLIcon from "@/assets/icons/html5.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import LanguageIcon from "@/components/LanguageIcon";
 export const hobbies = [
   {
     title: "Painting",

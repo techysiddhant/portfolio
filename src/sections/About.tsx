@@ -26,14 +26,14 @@ export const AboutSection = () => {
             </div>
           </Card>
           <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
-            <CardHeader title="My Toolbox" className="" description="Expore the technologies and tools I use to craft exceptional digital experiences." />
+            <CardHeader title="My Toolbox" className="" description="Discover the tools I use to create exceptional digital experiences." />
             <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
             <ToolboxItems items={toolboxItems} className="mt-6 " itemsWrapperClassName=" animate-move-right [animation-duration:20s]" />
           </Card>
         </div>
         <div className="grid gird-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
           <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-            <CardHeader className="px-6 py-6" title="Beyond the code" description="Expore my interests and hobbies beyond the digital world." />
+            <CardHeader className="px-6 py-6" title="Beyond the code" description="Discover my passions and hobbies outside the digital realm." />
             <div className="relative flex-1" ref={constraintRef}>
               {
                 hobbies?.map((hobby) => (
