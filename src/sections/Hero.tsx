@@ -45,7 +45,7 @@ export const HeroSection = () => {
         <StarIcon className="size-28 text-emerald-300" />
       </HeroOrbit>
     </div>
-    <div className="container">
+    <div className="container ">
       <div className='flex flex-col items-center'>
         <Image src={memojiImage} className='size-[100px]' alt='Person peeking form behind laptop' />
         <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
@@ -61,7 +61,7 @@ export const HeroSection = () => {
           I specialize in trasforming designs into functional, high-performing web applications. Let&rsquo;s discuss your next project.
         </p>
       </div>
-      <div className='flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4 z-30'>
+      <div className='flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4 z-30 relative'>
         <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
           <span className='font-semibold'>Expore My Work</span>
           <ArrowDown className="size-4" />

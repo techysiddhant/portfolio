@@ -3,91 +3,15 @@ import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
-import JavaScriptIcon from "@/assets/icons/square-js.svg";
-import ReactIcon from "@/assets/icons/react.svg";
-import HTMLIcon from "@/assets/icons/html5.svg";
-import CSSIcon from "@/assets/icons/css3.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
-import GithubIcon from "@/assets/icons/github.svg";
-import LanguageIcon from "@/components/LanguageIcon";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
 import { motion } from 'framer-motion'
 import { useRef } from "react";
-const toolboxItems = [
-  {
-    title: "javaScript",
-    iconType: JavaScriptIcon
-  },
-  {
-    title: "HTML5",
-    iconType: HTMLIcon
-  },
-  {
-    title: "CSS3",
-    iconType: CSSIcon
-  },
-  {
-    title: "React",
-    iconType: ReactIcon
-  },
-  {
-    title: "Chrome",
-    iconType: ChromeIcon
-  },
-  {
-    title: "Github",
-    iconType: GithubIcon
-  }
+import { hobbies, toolboxItems } from "@/constants";
 
-]
-const hobbies = [
-  {
-    title: "Painting",
-    emoji: '🎨',
-    left: '5%',
-    top: "5%"
-  },
-  {
-    title: "Photography",
-    emoji: '📷',
-    left: '50%',
-    top: "5%"
-  },
-  {
-    title: "Gaming",
-    emoji: '🎮',
-    left: '10%',
-    top: "35%"
-  },
-  {
-    title: "Music",
-    emoji: '🎵',
-    left: '35%',
-    top: "40%"
-  },
-  {
-    title: "Fitness",
-    emoji: '🏋️‍♀️',
-    left: '70%',
-    top: "45%"
 
-  },
-  {
-    title: "Reading",
-    emoji: '📚',
-    left: '5%',
-    top: "65%"
-  },
-  {
-    title: "Travelling",
-    emoji: '🌍',
-    left: '45%',
-    top: "70%"
-  },
-]
 export const AboutSection = () => {
   const constraintRef = useRef(null)
   return <section className="py-20 lg:py-28">
@@ -112,7 +36,7 @@ export const AboutSection = () => {
             <CardHeader className="px-6 py-6" title="Beyond the code" description="Expore my interests and hobbies beyond the digital world." />
             <div className="relative flex-1" ref={constraintRef}>
               {
-                hobbies.map((hobby) => (
+                hobbies?.map((hobby) => (
                   <motion.div drag dragConstraints={constraintRef} key={hobby.title} style={{ left: hobby.left, top: hobby.top }} className="absolute inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 "   >
                     <span className="text-gray-950 font-medium">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
