@@ -5,8 +5,8 @@ import { twMerge } from "tailwind-merge";
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const calistoga = Calistoga({ subsets: ['latin'], weight: '400', variable: '--font-serif' });
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Next JS",
+  title: "Siddhant Jain's Portfolio",
+  description: "Full Stack Web Developer with expertise in React.js, Next.js, Node.js, and TypeScript. View my portfolio to see user-friendly, scalable web applications, and clean code solutions for modern digital challenges",
 };
 
 export default function RootLayout({
