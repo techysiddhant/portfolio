@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import memojiImage from '../assets/images/memoji-computer.png';
 import ArrowDown from '@/assets/icons/arrow-down.svg'
@@ -6,6 +7,7 @@ import StarIcon from '@/assets/icons/star.svg'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import HeroOrbit from '@/components/HeroOrbit';
 import Link from 'next/link';
+import { scrollToSection } from '@/utils';
 export const HeroSection = () => {
   return <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
     <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -63,7 +65,7 @@ export const HeroSection = () => {
         </p>
       </div>
       <div className='flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4 z-30 relative'>
-        <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
+        <button onClick={() => scrollToSection('projects')} className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
           <span className='font-semibold'>Expore My Work</span>
           <ArrowDown className="size-4" />
         </button>
