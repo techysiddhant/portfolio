@@ -1,5 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import Link from "next/link";
 export const ContactSection = () => {
   return <section className="py-16 pt-12 lg:py-24 lg:pt-20">
     <div className="container mx-auto">
@@ -12,10 +13,10 @@ export const ContactSection = () => {
             <p className="text-sm mt-2 md:text-base">Ready to turn your vision into reality? Get in touch, and let&apos;s explore how I can help bring your project to life.</p>
           </div>
           <div>
-            <button className="text-white w-max border border-gray-900 bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 mt-8">
+            <Link href="/contact" className="text-white w-max border border-gray-900 bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 mt-8">
               <span className="font-semibold">Contact Me</span>
               <ArrowUpRightIcon className="size-4" />
-            </button>
+            </Link>
           </div>
         </div>
 

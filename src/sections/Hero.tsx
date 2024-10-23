@@ -5,6 +5,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import HeroOrbit from '@/components/HeroOrbit';
+import Link from 'next/link';
 export const HeroSection = () => {
   return <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
     <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -66,10 +67,11 @@ export const HeroSection = () => {
           <span className='font-semibold'>Expore My Work</span>
           <ArrowDown className="size-4" />
         </button>
-        <button className='inline-flex gap-2 items-center border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer'>
+
+        <Link href="/contact" className='inline-flex gap-2 items-center border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer'>
           <span>👋</span>
           <span className='font-semibold'>Let&rsquo;s Connect</span>
-        </button>
+        </Link>
       </div>
     </div>
   </div>;

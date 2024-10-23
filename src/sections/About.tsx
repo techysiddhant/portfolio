@@ -14,7 +14,7 @@ import { hobbies, toolboxItems } from "@/constants";
 
 export const AboutSection = () => {
   const constraintRef = useRef(null)
-  return <section className="py-20 lg:py-28">
+  return <section className="py-20 lg:py-28" id="about">
     <div className="container mx-auto">
       <SectionHeader eyebrow="About Me" title="A Glimpse Into My World" description="Learn more about who I am, what I do, and what inspires me." />
       <div className="mt-20 flex flex-col gap-6">
