@@ -2,19 +2,19 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 const links = [
   {
     title: "Youtube",
-    href: "#"
+    href: "https://www.youtube.com/@100xcoding"
   },
   {
     title: "Twitter",
-    href: "#"
+    href: "https://x.com/techysiddhant"
   },
   {
     title: "Instagram",
-    href: "#"
+    href: "https://www.instagram.com/techysiddhant"
   },
   {
     title: "LinkedIn",
-    href: "#"
+    href: "https://www.linkedin.com/in/techysiddhant"
   }
 ]
 export const Footer = () => {
