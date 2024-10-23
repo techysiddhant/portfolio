@@ -21,14 +21,26 @@ const ContactForm = () => {
             message,
         };
         try {
-            const response = await emailjs.send(conf.emailjsServiceId, conf.emailjsTemplateId, templateParams, conf.emailjsPublicKey);
-            if (response.status === 200) {
-                setEmail("");
-                setName("");
-                setMessage("");
-                alert("Message sent successfully");
-                toast.success('Email send successfully');
-            }
+            const response = emailjs.send(conf.emailjsServiceId, conf.emailjsTemplateId, templateParams, conf.emailjsPublicKey);
+            toast.promise(response, {
+                loading: 'Sending email...',
+                success: (response) => {
+                    if (response.status === 200) {
+                        setEmail("");
+                        setName("");
+                        setMessage("");
+                        return 'Email sent successfully';
+                    }
+                },
+                error: 'Error sending email'
+            })
+            // if (response.status === 200) {
+            //     setEmail("");
+            //     setName("");
+            //     setMessage("");
+            //     alert("Message sent successfully");
+            //     toast.success('Email send successfully');
+            // }
         } catch (error) {
             console.error(error);
             toast.error('Error sending email');
