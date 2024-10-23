@@ -5,7 +5,7 @@ const links = [
     href: "https://www.youtube.com/@100xcoding"
   },
   {
-    title: "Twitter",
+    title: "X (Twitter)",
     href: "https://x.com/techysiddhant"
   },
   {
@@ -25,7 +25,7 @@ export const Footer = () => {
         <div className='text-white/40 '>&copy; 2024. All rights reserved.</div>
         <nav className='flex flex-col md:flex-row items-center gap-8 '>
           {
-            links.map(link => <a key={link.title} href={link.href} className=' inline-flex items-center gap-1.5'><span className='font-semibold'>{link.title}</span>
+            links.map(link => <a key={link.title} href={link.href} className=' inline-flex items-center gap-1.5'><span className='font-semibold  tracking-wider'>{link.title}</span>
               <ArrowUpRightIcon className="size-4" />
             </a>)
           }
