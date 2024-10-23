@@ -1,6 +1,7 @@
 import Card from '@/components/Card'
 import React from 'react'
 import StarIcon from "@/assets/icons/star.svg";
+import ContactForm from '@/components/ContactForm';
 
 const page = () => {
     return (
@@ -16,14 +17,7 @@ const page = () => {
                         </div>
                         <p className="text-sm lg:text-base max-w-xs lg:max-w-md text-white/60">Whether you&apos;re looking for a developer to bring your vision to life or simply want to chat about tech, I&apos;m always excited to collaborate</p>
                     </div>
-                    <div className='px-6 py-6 md:py-8 md:px-10 flex flex-col gap-4 '>
-                        <input type='text' placeholder='Your Name' className='bg-transparent  border-2 border-white/20 rounded-md px-4 py-2 outline-none focus:border-emerald-300' />
-                        <input type='email' placeholder='Your Email' className='bg-transparent  border-2 border-white/20 rounded-md px-4 py-2 outline-none focus:border-emerald-300' />
-                        <textarea placeholder='Your Message' className='bg-transparent  border-2 border-white/20 rounded-md px-4 py-2 outline-none focus:border-emerald-300' />
-                        <button className='mx-auto  w-fit  text-gray-950 font-semibold items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5'>
-                            Let&apos;s Chat
-                        </button>
-                    </div>
+                    <ContactForm />
                 </Card>
 
             </div>
