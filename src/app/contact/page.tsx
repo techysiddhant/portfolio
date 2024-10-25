@@ -3,7 +3,10 @@ import React from 'react'
 import StarIcon from "@/assets/icons/star.svg";
 import ContactForm from '@/components/ContactForm';
 import { Header } from '@/sections/Header';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: "Contact Us",
+};
 const page = () => {
     return (
         <>
