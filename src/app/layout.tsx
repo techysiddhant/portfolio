@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Explore my portfolio showcasing high-quality web applications built with React, Next.js, Node.js, and TypeScript. As a Full Stack Developer, I specialize in creating scalable, responsive, and user-focused digital solutions",
     images: ["/opengraph-image.png"],
   },
-  metadataBase: new URL("https://www.siddhantjain.co.in/")
+  metadataBase: new URL("https://thesiddhant.com")
 };
 
 export default function RootLayout({
